@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Cat form</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__title">Your happy cat</h1>
+                <div class="form__item">
+                    <label for="catName" class="form__label">Cat name*:</label>
+                    <input type="text" id="catName" name="catName" class="form__input _req">
+                </div>
+                <div class="form__item">
+                    <label for="ownerName" class="form__label">Your name*:</label>
+                    <input type="text" id="ownerName" name="ownerName" class="form__input _req">
+                </div>
+                <div class="form__item">
+                    <label for="email" class="form__label">E-mail*:</label>
+                    <input type="text" id="email" name="email" class="form__input _req _email">
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Pet gender*:</div>
+                    <div class="options">
+                        <div class="options__item">
+                            <input id="female" checked type="radio" value="female" name="gender" class="options__input">
+                            <label for="female" class="options__label"><span>Female</span></label>
+                        </div>
+                        <div class="options__item">
+                            <input id="male" type="radio" value="male" name="gender" class="options__input">
+                            <label for="male" class="options__label"><span>Male</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Food preferences:</div>
+                    <select name="food" class="select">
+                        <option value="dry food" selected>Dry food</option>
+                        <option value="wet food">Wet food</option>
+                        <option value="natural food">Natural food</option>
+                        <option value="mixed food">Mixed</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="comment" class="form__label">Comment:</label>
+                    <textarea name="comment" id="comment" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Photo of your cat</div>
+                    <div class="file">
+                        <div class="file__item">
+                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                            <div class="file__button">Select</div>
+                        </div>
+                        <div id="formPreview" class="file__preview"></div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req">
+                        <label for="formAgreement" class="checkbox__label"><span>Personal Data Subject hereby gives consent to the Operator on transfer of the Personal Data to any third parties for processing on behalf of the Operator</span></label>
+                    </div>
+                </div>
+                <button type="submit" class="form__button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
